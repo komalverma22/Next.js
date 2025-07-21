@@ -27,7 +27,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+       
+        {/* the page handler component ,this will appear on all the routes means first hii there will then all the children */}
+        <div className="py-4 px-2 border-b">
+          Medium Website
+        </div>
+        {children}  
       </body>
     </html>
   );
